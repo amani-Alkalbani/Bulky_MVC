@@ -1,0 +1,28 @@
+﻿@page
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = "Access denied";
+}
+
+@* <header> *@
+@*     <h1 class="text-danger">@ViewData["Title"]</h1> *@
+@*     <p class="text-danger">You do not have access to this resource.</p> *@
+@* </header> *@
+
+
+<section class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4 text-danger">@ViewData["Title"]</h1>
+        <p class="lead text-muted">Sorry, you don’t have permission to access this page.</p>
+
+        <div class="alert alert-warning mt-4 mx-auto" role="alert" style="max-width: 600px;">
+            This action requires specific permissions that your account currently does not have.
+            If you believe this is an error, please contact the site administrator.
+        </div>
+
+        <div class="mt-4">
+            <a class="btn btn-primary" href="/">Go to Home</a>
+            <a class="btn btn-secondary" href="javascript:history.back()">Go Back</a>
+        </div>
+    </div>
+</section>
